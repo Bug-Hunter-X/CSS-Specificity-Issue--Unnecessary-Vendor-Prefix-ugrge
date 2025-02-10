@@ -1,0 +1,7 @@
+The following CSS code has a common error: it uses a vendor prefix that may not be necessary and could lead to specificity issues.
+
+```css
+-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+```
+
+The `-webkit-` prefix is specific to WebKit-based browsers (Chrome, Safari). Modern browsers support the standard `box-shadow` property.  Using the prefixed version alongside the standard version could lead to unexpected rendering due to specificity conflicts. 
