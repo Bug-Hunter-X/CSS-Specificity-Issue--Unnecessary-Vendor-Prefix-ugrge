@@ -1,0 +1,7 @@
+The solution is to remove the unnecessary vendor prefix and use the standard `box-shadow` property:
+
+```css
+box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+```
+
+This ensures consistent rendering across all modern browsers and avoids specificity problems.
